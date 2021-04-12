@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/jogo-da-forca/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/jogo-da-forca/static/js/main.c7cc2a70.chunk.js",
-    "main.js.map": "/jogo-da-forca/static/js/main.c7cc2a70.chunk.js.map",
-    "runtime-main.js": "/jogo-da-forca/static/js/runtime-main.62263047.js",
-    "runtime-main.js.map": "/jogo-da-forca/static/js/runtime-main.62263047.js.map",
-    "static/js/2.0cb71366.chunk.js": "/jogo-da-forca/static/js/2.0cb71366.chunk.js",
-    "static/js/2.0cb71366.chunk.js.map": "/jogo-da-forca/static/js/2.0cb71366.chunk.js.map",
-    "static/js/3.479653c8.chunk.js": "/jogo-da-forca/static/js/3.479653c8.chunk.js",
-    "static/js/3.479653c8.chunk.js.map": "/jogo-da-forca/static/js/3.479653c8.chunk.js.map",
+    "main.css": "/jogo-da-forca/static/css/main.980aa088.chunk.css",
+    "main.js": "/jogo-da-forca/static/js/main.705e95d9.chunk.js",
+    "main.js.map": "/jogo-da-forca/static/js/main.705e95d9.chunk.js.map",
+    "runtime-main.js": "/jogo-da-forca/static/js/runtime-main.88ef9f0c.js",
+    "runtime-main.js.map": "/jogo-da-forca/static/js/runtime-main.88ef9f0c.js.map",
+    "static/js/2.d45e2b11.chunk.js": "/jogo-da-forca/static/js/2.d45e2b11.chunk.js",
+    "static/js/2.d45e2b11.chunk.js.map": "/jogo-da-forca/static/js/2.d45e2b11.chunk.js.map",
+    "static/js/3.91e7397b.chunk.js": "/jogo-da-forca/static/js/3.91e7397b.chunk.js",
+    "static/js/3.91e7397b.chunk.js.map": "/jogo-da-forca/static/js/3.91e7397b.chunk.js.map",
     "index.html": "/jogo-da-forca/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/jogo-da-forca/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.0cb71366.chunk.js.LICENSE.txt": "/jogo-da-forca/static/js/2.0cb71366.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/jogo-da-forca/static/media/logo.6ce24c58.svg"
+    "static/css/main.980aa088.chunk.css.map": "/jogo-da-forca/static/css/main.980aa088.chunk.css.map",
+    "static/js/2.d45e2b11.chunk.js.LICENSE.txt": "/jogo-da-forca/static/js/2.d45e2b11.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/jogo-da-forca/static/media/blood.19172a1b.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.62263047.js",
-    "static/js/2.0cb71366.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.c7cc2a70.chunk.js"
+    "static/js/runtime-main.88ef9f0c.js",
+    "static/js/2.d45e2b11.chunk.js",
+    "static/css/main.980aa088.chunk.css",
+    "static/js/main.705e95d9.chunk.js"
   ]
 }
