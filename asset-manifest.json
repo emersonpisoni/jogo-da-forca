@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/jogo-da-forca/static/css/main.952f5a9c.chunk.css",
-    "main.js": "/jogo-da-forca/static/js/main.97a724dd.chunk.js",
-    "main.js.map": "/jogo-da-forca/static/js/main.97a724dd.chunk.js.map",
-    "runtime-main.js": "/jogo-da-forca/static/js/runtime-main.0a9c290c.js",
-    "runtime-main.js.map": "/jogo-da-forca/static/js/runtime-main.0a9c290c.js.map",
-    "static/js/2.931ffe98.chunk.js": "/jogo-da-forca/static/js/2.931ffe98.chunk.js",
-    "static/js/2.931ffe98.chunk.js.map": "/jogo-da-forca/static/js/2.931ffe98.chunk.js.map",
-    "index.html": "/jogo-da-forca/index.html",
-    "static/css/main.952f5a9c.chunk.css.map": "/jogo-da-forca/static/css/main.952f5a9c.chunk.css.map",
-    "static/js/2.931ffe98.chunk.js.LICENSE.txt": "/jogo-da-forca/static/js/2.931ffe98.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/jogo-da-forca/static/media/blood.19172a1b.ttf"
+    "main.css": "/static/css/main.2a8454a4.chunk.css",
+    "main.js": "/static/js/main.a44b5225.chunk.js",
+    "main.js.map": "/static/js/main.a44b5225.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6a060b92.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6a060b92.js.map",
+    "static/js/2.2f432b1d.chunk.js": "/static/js/2.2f432b1d.chunk.js",
+    "static/js/2.2f432b1d.chunk.js.map": "/static/js/2.2f432b1d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2a8454a4.chunk.css.map": "/static/css/main.2a8454a4.chunk.css.map",
+    "static/js/2.2f432b1d.chunk.js.LICENSE.txt": "/static/js/2.2f432b1d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/blood.19172a1b.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a9c290c.js",
-    "static/js/2.931ffe98.chunk.js",
-    "static/css/main.952f5a9c.chunk.css",
-    "static/js/main.97a724dd.chunk.js"
+    "static/js/runtime-main.6a060b92.js",
+    "static/js/2.2f432b1d.chunk.js",
+    "static/css/main.2a8454a4.chunk.css",
+    "static/js/main.a44b5225.chunk.js"
   ]
 }
