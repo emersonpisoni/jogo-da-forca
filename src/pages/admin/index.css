@@ -1,0 +1,7 @@
+.admin {
+  background: linear-gradient(90deg, #020024 0%, #390101 48%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
