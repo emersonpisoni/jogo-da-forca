@@ -1,5 +1,6 @@
 {
   "name": "jogo-da-forca",
+  "homepage": "http://emersonpisoni.github.io/jogo-da-forca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
