@@ -1,6 +1,7 @@
 .palavras {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   background: linear-gradient(90deg, #020024 0%, #390101 48%, #000000 100%);

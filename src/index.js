@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Jogo from "./pages/jogo";
+import { Jogo } from "./pages/jogo";
 import Admin from "./pages/admin";
 import { Home } from "./pages/home";
 import { Categorias } from "./pages/categorias";

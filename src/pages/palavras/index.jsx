@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Button from "../../components/Button";
 import "./index.css";
 
 export function Palavras() {
@@ -86,6 +88,9 @@ export function Palavras() {
 
   return (
     <div className="palavras">
+      <Link to="/admin">
+        <Button>Voltar</Button>
+      </Link>
       <table>
         <tr>
           <th>Categoria</th>

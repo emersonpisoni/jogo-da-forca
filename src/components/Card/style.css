@@ -1,0 +1,10 @@
+.card {
+  padding: 10px;
+  background-color: black;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "blood";
+}

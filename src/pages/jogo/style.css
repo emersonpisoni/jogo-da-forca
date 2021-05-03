@@ -1,0 +1,51 @@
+.jogo {
+  background: linear-gradient(90deg, #020024 0%, #390101 48%, #000000 100%);
+  font-family: 'blood';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: #484848;
+  color: white;
+  font-size: 30px;
+}
+
+.jogo > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.jogo > div > .forca {
+  display: flex;
+  justify-content: center;
+}
+
+.jogo > div > .letras-cantadas > div {
+  display: flex;
+  justify-content: center;
+}
+
+.jogo > div > .digite-a-letra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jogo > div > .digite-a-letra > input {
+  margin-top: 10px;
+}
+
+.jogo > div > .pontuacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jogo > div > .pontuacao > .card {
+  margin-top: 10px;
+}

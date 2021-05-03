@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Button from "../../components/Button";
 import "./index.css";
 
 export function Categorias() {
@@ -54,13 +56,16 @@ export function Categorias() {
       await axios.post(`http://localhost:8080/api/categories`, {
         name: form.add,
       });
-      setForm({ add: '' })
+      setForm({ add: "" });
       await fetchCategorias();
     } catch (error) {}
   }
 
   return (
     <div className="categorias">
+      <Link to="/admin">
+        <Button>Voltar</Button>
+      </Link>
       <table>
         <tr>
           <th>Categoria</th>
