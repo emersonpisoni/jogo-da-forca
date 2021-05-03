@@ -1,0 +1,14 @@
+.palavras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #020024 0%, #390101 48%, #000000 100%);
+}
+
+.palavras > table {
+  background-color: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 5px;
+  padding: 10px;
+}

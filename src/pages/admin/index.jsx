@@ -9,7 +9,7 @@ export default function Admin() {
       <Link to='/categorias'>
         <Button>Gerenciar Categorias</Button>
       </Link>
-      <Link>
+      <Link to='/palavras'>
         <Button>Gerenciar Palavras</Button>
       </Link>
     </div>

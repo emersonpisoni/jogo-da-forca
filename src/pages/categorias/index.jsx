@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./index.css";
 
-export default function Categorias() {
+export function Categorias() {
   const [categorias, setCategorias] = useState([]);
   const [form, setForm] = useState({});
 
