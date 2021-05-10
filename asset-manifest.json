@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jogo-da-forca/static/css/main.cc29d861.chunk.css",
-    "main.js": "/jogo-da-forca/static/js/main.f9038a2a.chunk.js",
-    "main.js.map": "/jogo-da-forca/static/js/main.f9038a2a.chunk.js.map",
+    "main.js": "/jogo-da-forca/static/js/main.d68df0b3.chunk.js",
+    "main.js.map": "/jogo-da-forca/static/js/main.d68df0b3.chunk.js.map",
     "runtime-main.js": "/jogo-da-forca/static/js/runtime-main.0a9c290c.js",
     "runtime-main.js.map": "/jogo-da-forca/static/js/runtime-main.0a9c290c.js.map",
     "static/css/2.97503911.chunk.css": "/jogo-da-forca/static/css/2.97503911.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.97503911.chunk.css",
     "static/js/2.e3617b9e.chunk.js",
     "static/css/main.cc29d861.chunk.css",
-    "static/js/main.f9038a2a.chunk.js"
+    "static/js/main.d68df0b3.chunk.js"
   ]
 }
