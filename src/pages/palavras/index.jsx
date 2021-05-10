@@ -1,7 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
+import { getAllCategories } from "../api/categories";
+import { deleteWord, getAllWord, newWord, updateWord } from "../api/word";
 import "./index.css";
 
 export function Palavras() {
@@ -15,14 +16,10 @@ export function Palavras() {
     fetchCategorias();
   }, []);
 
-  useEffect(() => {
-    console.log(categoriaSelecionada);
-  });
-
   async function fetchCategorias() {
     const newForm = {};
     try {
-      const res = await axios.get("http://localhost:8080/api/categories");
+      const res = await getAllCategories();
       setCategorias(res.data);
       setCategoriaSelecionada(res.data[0].id);
       res.data.forEach((categoria) => {
@@ -37,7 +34,7 @@ export function Palavras() {
   async function fetchPalavras() {
     const newForm = {};
     try {
-      const res = await axios.get("http://localhost:8080/api/words");
+      const res = await getAllWord();
       setPalavras(res.data);
       res.data.forEach((word) => {
         newForm[word.name] = word.name;
@@ -50,7 +47,7 @@ export function Palavras() {
 
   async function onExcluirPalavra(idPalavra) {
     try {
-      await axios.delete(`http://localhost:8080/api/words/${idPalavra}`);
+      await deleteWord(idPalavra);
       await fetchPalavras();
     } catch (error) {
       console.log(error);
@@ -59,7 +56,7 @@ export function Palavras() {
 
   async function onEditarPalavra(palavra) {
     try {
-      await axios.put(`http://localhost:8080/api/words/${palavra.id}`, {
+      await updateWord(palavra.id, {
         name: form[palavra.name],
       });
       await fetchPalavras();
@@ -75,7 +72,7 @@ export function Palavras() {
 
   async function onAddPalavra() {
     try {
-      await axios.post(`http://localhost:8080/api/words`, {
+      await newWord({
         name: form.add,
         category: {
           id: categoriaSelecionada,

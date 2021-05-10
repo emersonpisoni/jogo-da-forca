@@ -1,0 +1,54 @@
+.ranking {
+  display: flex;
+  color: white;
+  font-family: "blood";
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  height: 100vh;
+  background-image: url(../../assets/images/zumbi.jpg);
+}
+
+.ranking > .lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background-color: #000000a6;
+}
+
+.ranking > .lista > .posicao {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+.ranking > .lista > .posicao > .conquistas {
+  width: 20%;
+}
+
+.ranking > .lista > .posicao > div {
+  width: 33%;
+}
+
+.conquistas {
+  display: flex;
+  flex-direction: column;
+}
+
+.conquistas > .title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.conquistas > .conquista {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d5d2d2;
+  padding: 10px;
+}

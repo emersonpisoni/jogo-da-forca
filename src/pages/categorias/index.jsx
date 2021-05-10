@@ -2,6 +2,12 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
+import {
+  deleteCategory,
+  getAllCategories,
+  newCategory,
+  updateCategories,
+} from "../api/categories";
 import "./index.css";
 
 export function Categorias() {
@@ -15,7 +21,7 @@ export function Categorias() {
   async function fetchCategorias() {
     const newForm = {};
     try {
-      const res = await axios.get("http://localhost:8080/api/categories");
+      const res = await getAllCategories();
       setCategorias(res.data);
       res.data.forEach((categoria) => {
         newForm[categoria.name] = categoria.name;
@@ -28,7 +34,7 @@ export function Categorias() {
 
   async function onExcluirCategoria(idCategoria) {
     try {
-      await axios.delete(`http://localhost:8080/api/categories/${idCategoria}`);
+      await deleteCategory(idCategoria);
       await fetchCategorias();
     } catch (error) {
       console.log(error);
@@ -37,9 +43,10 @@ export function Categorias() {
 
   async function onEditarCategoria(categoria) {
     try {
-      await axios.put(`http://localhost:8080/api/categories/${categoria.id}`, {
+      await updateCategories(categoria.id, {
         name: form[categoria.name],
       });
+
       await fetchCategorias();
     } catch (error) {}
   }
@@ -53,7 +60,7 @@ export function Categorias() {
 
   async function onAddCategoria() {
     try {
-      await axios.post(`http://localhost:8080/api/categories`, {
+      await newCategory({
         name: form.add,
       });
       setForm({ add: "" });
@@ -73,7 +80,7 @@ export function Categorias() {
         </tr>
         {categorias.map((categoria) => {
           return (
-            <tr>
+            <tr key={categoria.name}>
               <td>
                 <input
                   name={categoria.name}

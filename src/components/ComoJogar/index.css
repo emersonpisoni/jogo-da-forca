@@ -5,10 +5,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.modal {
-  width: 500px;
-  border: 10px solid red;
-  background: white;
-  position: absolute;
-}

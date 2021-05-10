@@ -1,14 +1,15 @@
 .jogo {
-  background: linear-gradient(90deg, #020024 0%, #390101 48%, #000000 100%);
-  font-family: 'blood';
+  background-image: url(../../assets/images/zumbi.jpg);
+  font-family: "blood";
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
   background-color: #484848;
-  color: white;
+  color: red;
   font-size: 30px;
+  text-shadow: 0px 4px 1px #000000;
 }
 
 .jogo > div {
@@ -18,9 +19,49 @@
   justify-content: space-around;
 }
 
-.jogo > div > .forca {
+.jogo > div > div {
+  flex: 1;
   display: flex;
   justify-content: center;
+}
+
+.jogo > div > .erros {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.jogo > div > .erros > div {
+  display: flex;
+}
+
+.jogo > div > .erros > div > .erro {
+  padding-left: 10px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.jogo > div > .palavra-escondida {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jogo > div > .palavra-escondida > div {
+  display: flex;
+  justify-content: center;
+}
+
+.jogo > div > .palavra-escondida > div > .card {
+  width: 32px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.jogo > div > .letras-cantadas {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .jogo > div > .letras-cantadas > div {
@@ -48,4 +89,14 @@
 
 .jogo > div > .pontuacao > .card {
   margin-top: 10px;
+}
+
+.seu-nome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seu-nome > div > input {
+  margin: 0 10px;
 }
