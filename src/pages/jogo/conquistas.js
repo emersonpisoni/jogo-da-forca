@@ -1,6 +1,6 @@
 import { toast, ToastContainer } from "react-toastify";
 
-const conquistasDisponíveis = [
+export const conquistasDisponíveis = [
   {
     id: 30,
     title: "Caçador de zumbis.",
