@@ -32,7 +32,7 @@ export function Jogo() {
   }, []);
 
   useEffect(() => {
-    mostraPalavraParaAcertar(palavraCorreta);
+    mostraPalavraParaAcertar(palavraCorreta, letrasDigitadas);
   }, [letrasDigitadas]);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export function Jogo() {
     } catch (error) {}
   }
 
-  async function mostraPalavraParaAcertar(palavra) {
+  async function mostraPalavraParaAcertar(palavra, letrasDigitadas) {
     const novaPalavraEscondida = [];
     const erros = [];
 
@@ -72,9 +72,13 @@ export function Jogo() {
         : novaPalavraEscondida.push(" ");
     }
 
+    console.log("letras digitadas", letrasDigitadas);
+    console.log("palavra escondida", novaPalavraEscondida);
+
     letrasDigitadas.forEach(
       (letra) => !novaPalavraEscondida.includes(letra) && erros.push(letra)
     );
+    console.log(erros.length);
     setPalavraEscondida(novaPalavraEscondida);
     setErros(erros);
 
@@ -106,7 +110,7 @@ export function Jogo() {
     }
 
     setPalavraCorreta(novaPalavraCorreta);
-    mostraPalavraParaAcertar(palavra);
+    mostraPalavraParaAcertar(palavra, []);
   }
 
   async function onFinalizarJogo() {

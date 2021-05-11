@@ -60,12 +60,13 @@ function verificaSeConquistaNaoFoiFeita(idConquistaDisponivel, conquistas) {
 }
 
 export function verificaConquistas(erros, conquistas, setConquistas, rodada) {
+  const conquistasGanhas = [];
   // Conquista 12
   if (erros.length === 0 && verificaSeConquistaNaoFoiFeita(12, conquistas)) {
     const achievement = conquistasDisponíveis.find(
       (conquistaDisponível) => conquistaDisponível.id === 12
     );
-    setConquistas([...conquistas, achievement]);
+    conquistasGanhas.push(achievement);
 
     toast(
       <div>
@@ -81,7 +82,7 @@ export function verificaConquistas(erros, conquistas, setConquistas, rodada) {
     const achievement = conquistasDisponíveis.find(
       (conquistaDisponível) => conquistaDisponível.id === 25
     );
-    setConquistas([...conquistas, achievement]);
+    conquistasGanhas.push(achievement);
 
     toast(
       <div>
@@ -97,7 +98,7 @@ export function verificaConquistas(erros, conquistas, setConquistas, rodada) {
     const achievement = conquistasDisponíveis.find(
       (conquistaDisponível) => conquistaDisponível.id === 26
     );
-    setConquistas([...conquistas, achievement]);
+    conquistasGanhas.push(achievement);
 
     toast(
       <div>
@@ -107,4 +108,6 @@ export function verificaConquistas(erros, conquistas, setConquistas, rodada) {
       </div>
     );
   }
+
+  setConquistas([...conquistas, ...conquistasGanhas]);
 }
