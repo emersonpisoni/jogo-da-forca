@@ -72,13 +72,9 @@ export function Jogo() {
         : novaPalavraEscondida.push(" ");
     }
 
-    console.log("letras digitadas", letrasDigitadas);
-    console.log("palavra escondida", novaPalavraEscondida);
-
     letrasDigitadas.forEach(
       (letra) => !novaPalavraEscondida.includes(letra) && erros.push(letra)
     );
-    console.log(erros.length);
     setPalavraEscondida(novaPalavraEscondida);
     setErros(erros);
 
