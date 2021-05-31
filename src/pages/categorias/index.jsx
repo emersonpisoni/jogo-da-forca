@@ -44,7 +44,7 @@ export function Categorias() {
   async function onEditarCategoria(categoria) {
     try {
       await updateCategories(categoria.id, {
-        name: form[categoria.name],
+        name: form[categoria.name].trim(),
       });
 
       await fetchCategorias();
@@ -61,7 +61,7 @@ export function Categorias() {
   async function onAddCategoria() {
     try {
       await newCategory({
-        name: form.add,
+        name: form.add.trim(),
       });
       setForm({ add: "" });
       await fetchCategorias();

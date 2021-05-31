@@ -57,7 +57,7 @@ export function Palavras() {
   async function onEditarPalavra(palavra) {
     try {
       await updateWord(palavra.id, {
-        name: form[palavra.name],
+        name: form[palavra.name].trim(),
       });
       await fetchPalavras();
     } catch (error) {}
@@ -73,7 +73,7 @@ export function Palavras() {
   async function onAddPalavra() {
     try {
       await newWord({
-        name: form.add,
+        name: form.add.trim(),
         category: {
           id: categoriaSelecionada,
         },
