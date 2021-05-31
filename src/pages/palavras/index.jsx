@@ -58,6 +58,7 @@ export function Palavras() {
     try {
       await updateWord(palavra.id, {
         name: form[palavra.name].trim(),
+        category: { id: palavra.category.id },
       });
       await fetchPalavras();
     } catch (error) {}
